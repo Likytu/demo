@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница мои заявки</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav class="nav-block">
+        <div class="container">
+            <div class="nav-inner">
+                <img class="logo" src="static/hands-donation-png.webp" alt="логотип">
+                <div class="nav-links">
+                    <a href="index.php">Регистрация</a>
+                    <a href="login.php">Авторизация</a>
+                    <a href="look.php">Мои заявки</a>
+                    <a href="form.php">Сформировать заявку</a>
+                    <a href="admin.php">Панель администратора</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="page-title">Страница просмотра заявок</h1>
+    </div>
+    <div class="container">
+        <div class="error-message">
+                    </div>
+    </div>
+    <div class="container">
+        <div class="form-block">
+            <div class='table-responsive'>
+        <table class='table table-bordered text-center align-middle'>
+        <tr>
+        <td><b>Большое описание</b></td>
+        <td><b>Список</b></td>
+        <td><b>Текст</b></td>
+        <td><b>Телефон</b></td>
+        <td><b>Дата</b></td>
+        <td><b>Радио-кнопки</b></td>
+        <td><b>Чек-бокс</b></td>
+        <td><b>Отзыв</b></td>
+        <td><b>Оставить отзыв</b></td>
+        <td><b>Статус</b></td>
+        </tr><tr>
+                <td>тексттексттексттексттексттексттекст </td>
+                <td>Вариант2</td>
+                <td>Текст текст </td>
+                <td>+7 (913) 771-27-71</td>
+                <td>2026-05-21 00:14:00</td>
+                <td>Вариант3</td>
+                <td>Вариант1, Вариант4</td>
+                <td>Нет отзыва</td>
+                <td>Ещё в разработке</td>
+                <td>В разработке</td>
+            </tr><tr>
+                <td>ТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекстТекст</td>
+                <td>Вариант5</td>
+                <td>ТекстТекст</td>
+                <td>+7 (913) 771-27-71</td>
+                <td>2026-05-07 03:17:00</td>
+                <td>Вариант2</td>
+                <td>Вариант1, Вариант2, Вариант3, Вариант4</td>
+                <td>Нет отзыва</td>
+                <td>
+                    <form method='POST' action='look.php'>
+                        <input type='hidden' name='id' value='12'>
+                        <textarea class='form-control' name='review' rows='2' placeholder='Напишите ваш отзыв...' required></textarea>
+                        <button class='register-btn' type='submit' name='submit_review'>Отправить</button>
+                    </form></td>
+                <td>Выполнено</td>
+            </tr><tr>
+                <td>Текст Текст Текст</td>
+                <td>Вариант3</td>
+                <td>текст Текст</td>
+                <td>+7 (913) 771-27-71</td>
+                <td>2026-05-06 19:21:00</td>
+                <td>Вариант1</td>
+                <td>Вариант2, Вариант3</td>
+                <td>Отлично</td>
+                <td>Отзыв уже оставлен</td>
+                <td>Выполнено</td>
+            </tr><tr>
+                <td>ТекстТекст</td>
+                <td>Вариант4</td>
+                <td>Текст</td>
+                <td>+7 (913) 771-27-71</td>
+                <td>2026-05-14 20:39:00</td>
+                <td>Вариант2</td>
+                <td>Вариант4</td>
+                <td>Нет отзыва</td>
+                <td>Ещё в разработке</td>
+                <td>Новое</td>
+            </tr></table></div>        </div>
+        <div class="text-center">
+            <img class="side-image" src="static/фото.jpg" alt="рисунок">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+body {
+    background-color: rgb(184, 184, 184);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-block {
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 15px 0;
+    margin: 20px 50px 0px 50px;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.page-title {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    font-size: 24px;
+}
+
+.success-message {
+    color: #1d851c;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error-message {
+    color: #b9212e;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success-message:empty,
+.error-message:empty {
+    display: none;
+}
+
+.form-block {
+    background: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.form-block label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-block input,
+.form-block textarea {
+    background: rgb(240, 240, 240);
+}
+
+.form-control {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.register-btn {
+    width: 100%;
+    background: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.login-link span {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.hello,
+.hello-2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn-2 {
+    display: block;
+    width: 100%;
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.side-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 350px;
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+table {
+    background: white;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.form-block select {
+    background: rgb(240, 240, 240);
+}
+
+.radio-group,
+.checkbox-group {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.agree-box {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.agree-box label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+}
+
+input[type="datetime-local"] {
+    background: rgb(240, 240, 240);
+}
+
+.button {
+    background: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+
+    .nav-block {
+        margin: 10px 10px 0px 10px;
+    }
+
+    .nav-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 22px;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .form-block {
+        padding: 15px;
+    }
+
+    .slider img {
+        height: 250px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
